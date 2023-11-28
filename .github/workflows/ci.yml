@@ -25,4 +25,4 @@ jobs:
         context: .
         push: true
         tags: |
-          docker.io/${{ secrets.DOCKER_USERNAME }}/my-web-app:latest
+          ${{ secrets.DOCKER_USERNAME }}:my-web-app
