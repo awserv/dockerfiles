@@ -13,16 +13,16 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Set up Docker
-      uses: actions/dockerfile@v2
-      with:
-        dockerfile: Dockerfile
+    # - name: Set up Docker
+    #   uses: actions/dockerfile@v2
+    #   with:
+    #     dockerfile: Dockerfile
 
-    - name: Build Docker Image
-      run: docker build -t my-web-app .
+    # - name: Build Docker Image
+    #   run: docker build -t my-web-app .
 
-    - name: Login to Docker Registry
-      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} <DOCKER_REGISTRY>
+    # - name: Login to Docker Registry
+    #   run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} <DOCKER_REGISTRY>
 
-    - name: Push Docker Image
-      run: docker push <DOCKER_REGISTRY>/my-web-app:latest
+    # - name: Push Docker Image
+    #   run: docker push <DOCKER_REGISTRY>/my-web-app:latest
