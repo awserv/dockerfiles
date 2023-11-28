@@ -16,9 +16,9 @@ jobs:
     - name: Set up Docker
       uses: docker/setup-buildx-action@v1
     
-    # - name: Login to Docker Registry
-    #   run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_ACCESS_TOKEN }} registry.hub.docker.com
-    
+    - name: Login to Docker Registry
+      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_ACCESS_TOKEN }} docker.io
+
     - name: Build and Push Docker Image
       uses: docker/build-push-action@v2
       with:
