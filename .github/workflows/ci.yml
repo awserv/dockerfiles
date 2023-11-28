@@ -30,6 +30,3 @@ jobs:
         push: true
         tags: |
           - docker.io/${{ secrets.DOCKER_USERNAME }}/my-web-app:latest
-      env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
