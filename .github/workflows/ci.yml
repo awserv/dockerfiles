@@ -25,4 +25,4 @@ jobs:
         context: .
         push: true
         tags: |
-          ${{ secrets.DOCKER_USERNAME }}:my-web-app
+          my-web-app:latest
