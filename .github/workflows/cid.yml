@@ -13,8 +13,8 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Set up Dockerfile
-      uses: dockerfile
+    - name: Set up Docker
+      uses: actions/dockerfile@v2
       with:
         dockerfile: Dockerfile
 
