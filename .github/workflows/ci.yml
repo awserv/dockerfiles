@@ -22,7 +22,7 @@ jobs:
         context: .
         push: true
         tags: 
-          my-web-app:@v2
+          my-web-app
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
