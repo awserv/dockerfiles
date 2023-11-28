@@ -21,7 +21,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: <DOCKER_REGISTRY>/my-web-app:latest
+        tags: ${{ secrets.DOCKER_REGISTRY }}/my-web-app:latest
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
